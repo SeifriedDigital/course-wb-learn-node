@@ -1,0 +1,11 @@
+//- div
+//-   - const upName = name.toUpperCase();
+//-   p Hello!
+//-   img(src="person.jpg" alt=`Profile photo of ${name} aged ${age}`)
+
+//-   p Hello my name is #{upName} and I am #{age}
+
+extends layout
+
+block content
+  h2 Sale ends in #{h.moment().endOf('day').fromNow()}
