@@ -30,9 +30,10 @@ const storeSchema = new mongoose.Schema({
       address: {
         type: String,
         required: 'You must suppy an address!'
-      }
-    }
-});
+      }    
+    },
+    photo: String
+  });
 
 storeSchema.pre('save', function(next) {
   if (!this.isModified('name')) {
